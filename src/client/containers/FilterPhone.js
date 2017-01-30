@@ -4,7 +4,7 @@ import PhoneFilter from '../components/PhoneFilter'
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        filterPhoneByKeyWord: (fliter) => dispatch(filterPhoneByKeyWord(fliter)),
+        filterPhoneByKeyWord: (filter) => dispatch(filterPhoneByKeyWord(filter)),
         sortPhone: (sortBy) => dispatch(sortPhone(sortBy))
     }
 }

@@ -1,11 +1,11 @@
 import * as types from '../constants/ActionTypes'
 
-export const receviedPhones = phones => {
+export const receivedPhones = phones => {
     return {type: types.RECEIVED_PHONES, phones: phones}
 }
 
 export const fetchPhoneList = () => {
-    return dispatch => fetch('/api/phones').then(response => response.json()).then(phones => dispatch(receviedPhones(phones))).catch(e => console.error(e.toString()))
+    return dispatch => fetch('/api/phones').then(response => response.json()).then(phones => dispatch(receivedPhones(phones))).catch(e => console.error(e.toString()))
 }
 
 export const filterPhoneByKeyWord = filter => {

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is an Phonecat application rewroted by using react
+This is the angular Phonecat tutorial application rewritten using react.
 
 ## Prerequisites
 
